@@ -26,7 +26,7 @@ uvicorn  main:app --reload
 To shorten a given url, you would use the url_shortener endpoint.
 An example of calling said endpoint:
 ```
-0.0.0.0:8000/this-is-a-really-long-url-that-needs-to-be-shortened
+0.0.0.0:8000/shorten/this-is-a-really-long-url-that-needs-to-be-shortened
 ```
 This should return a shortened url to the user.
 Example response:
