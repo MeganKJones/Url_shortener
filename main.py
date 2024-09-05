@@ -31,7 +31,9 @@ def get_key_from_value(value) -> str | None:
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Welcome to Megan Jones' URL shortener.",
+            "to_shorten": "To shorten a URL, use the endpoint /shorten/<URL>",
+            "to_lengthen": "To use a shortened URL, use the endpoint /redirect/<SHORT_URL>"}
 
 
 @app.get("/shorten/{url:path}")
